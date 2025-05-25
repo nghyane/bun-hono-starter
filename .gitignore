@@ -56,3 +56,8 @@ demo-*.ts
 # Temporary files
 tmp/
 temp/
+docs/database/fpt_university_2025_data_migration.sql
+.gitignore
+.gitignore
+docs/reference/fpt_university_2025_reference.md
+docs/database/fpt_university_2025_init.sql

@@ -66,7 +66,7 @@ NODE_ENV=production make start   # Production mode
 
 - **Runtime**: [Bun](https://bun.sh/) - Ultra-fast JavaScript runtime
 - **Framework**: [Hono](https://hono.dev/) - Lightweight web framework
-- **Database**: [PostgreSQL](https://www.postgresql.org/) + [postgres.js](https://github.com/porsager/postgres)
+- **Database**: [PostgreSQL 17](https://www.postgresql.org/) + [postgres.js](https://github.com/porsager/postgres)
 - **Validation**: [Zod](https://zod.dev/) - TypeScript-first schema validation
 - **Logging**: [Pino](https://getpino.io/) - Fast JSON logger
 - **Testing**: Bun test runner

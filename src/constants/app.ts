@@ -5,7 +5,7 @@
 // API Information
 export const API_INFO = {
   NAME: "Personal API Starter",
-  VERSION: "1.0.0",
+  VERSION: "2.0.0",
   DESCRIPTION: "Personal REST API starter built with Bun, Hono, and PostgreSQL",
   RUNTIME: "Bun",
   FRAMEWORK: "Hono",

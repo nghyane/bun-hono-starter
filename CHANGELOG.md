@@ -1,12 +1,24 @@
 # Changelog
 
-## [1.0.0] - 2025-01-24
+## [2.0.0] - 2025-05-25
+
+### Major Changes
+- **PostgreSQL 15 → 17**: Better performance, new features
+- **Modular Database**: Organized into 6 logical files
+- **UUIDv8 Support**: Time-ordered UUIDs with microsecond precision
+- **Standardized Schema**: All tables follow consistent pattern
 
 ### Added
-- Initial setup: Bun + Hono + PostgreSQL
-- OpenAPI docs with Scalar UI
-- Health checks with database connectivity
-- Pino logging with request tracing
-- Error handling middleware
-- Test suite with Bun test runner
-- Environment validation with Zod
+- `uuid_generate_v8()`: Optimal UUID generation
+- `generate_short_id()`: User-friendly short IDs
+- `uuid_extract_timestamp_ms()`: Extract time from UUIDs
+- Comprehensive database documentation
+
+### Fixed
+- Health check tests for CI/CD compatibility
+- Database file execution order
+- Package name consistency
+
+## [1.0.0] - 2025-01-24
+
+Initial release with Bun + Hono + PostgreSQL stack
