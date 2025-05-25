@@ -3,7 +3,7 @@
 
 # Variables
 PROJECT_NAME := personal-api-starter
-DOCKER_COMPOSE_DEV := docker/docker-compose.dev.yml
+DOCKER_COMPOSE_DEV := docker/dev/docker-compose.yml
 BUILD_DIR := dist
 
 .PHONY: help install dev test build clean services-up services-down db-reset setup start fix
