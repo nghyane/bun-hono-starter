@@ -1,5 +1,17 @@
 # Changelog
 
+## [Unreleased]
+
+### Improved
+- **Enhanced setup command**: Auto-copy `.env.example` to `.env` if not exists
+- **Better developer experience**: Zero manual configuration steps
+- **Cleaner project structure**: Removed unnecessary reference files
+
+### Removed
+- `docs/reference/fpt_university_2025_reference.md`: Unnecessary reference file
+- `.env.local` support: Simplified to standard `.env` approach
+- Empty directories: Cleaned up project structure
+
 ## [2.0.0] - 2025-05-25
 
 ### Major Changes

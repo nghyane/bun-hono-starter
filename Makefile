@@ -70,7 +70,15 @@ db-reset: ## Reset database
 	sleep 10
 
 # Project setup
-setup: install services-up ## Initial project setup
+setup: install ## Initial project setup
+	echo "📋 Setting up environment files..."
+	if [ ! -f .env ]; then \
+		cp .env.example .env; \
+		echo "📄 Created .env from .env.example"; \
+	else \
+		echo "📄 .env already exists"; \
+	fi
+	$(MAKE) services-up
 	echo "✅ Project setup complete!"
 	echo "🚀 Run 'make dev' to start development"
 
