@@ -1,0 +1,43 @@
+{
+  "name": "hono-bun-starter",
+  "version": "1.0.0",
+  "description": "Modern REST API starter with Bun + Hono + PostgreSQL + TypeScript",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "keywords": [
+    "bun",
+    "hono",
+    "typescript",
+    "postgresql",
+    "rest-api",
+    "starter"
+  ],
+  "author": "Your Name <your.email@example.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "bun run dist/index.js",
+    "prepare": "husky"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.4",
+    "@types/bun": "latest",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.0.0"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "@hono/zod-openapi": "^0.19.6",
+    "@types/pino": "^7.0.5",
+    "hono": "^4.7.10",
+    "pino": "^9.7.0",
+    "pino-pretty": "^13.0.0",
+    "postgres": "^3.4.7",
+    "zod": "^3.25.28"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx,json}": ["biome check --write --no-errors-on-unmatched"]
+  }
+}
