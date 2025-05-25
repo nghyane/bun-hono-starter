@@ -1,8 +1,8 @@
-# Optimized Makefile for Hono Bun Starter
+# Optimized Makefile for Personal API Starter
 .SILENT:
 
 # Variables
-PROJECT_NAME := hono-bun-starter
+PROJECT_NAME := personal-api-starter
 DOCKER_COMPOSE_DEV := docker/docker-compose.dev.yml
 BUILD_DIR := dist
 

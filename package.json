@@ -1,20 +1,11 @@
 {
-  "name": "hono-bun-starter",
+  "name": "personal-api-starter",
   "version": "1.0.0",
-  "description": "Modern REST API starter with Bun + Hono + PostgreSQL + TypeScript",
+  "description": "Personal REST API starter with Bun + Hono + PostgreSQL + TypeScript",
   "module": "index.ts",
   "type": "module",
   "private": true,
-  "keywords": [
-    "bun",
-    "hono",
-    "typescript",
-    "postgresql",
-    "rest-api",
-    "starter"
-  ],
-  "author": "Your Name <your.email@example.com>",
-  "license": "MIT",
+
   "scripts": {
     "start": "bun run dist/index.js",
     "prepare": "husky"
