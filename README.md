@@ -45,15 +45,20 @@ make help            # Show all commands
 
 ## Environment Management
 
-Uses `direnv` for automatic environment loading with sensible defaults:
+Simple, single-file approach:
 
-- **`.envrc`** - Default development settings
-- **`.env.local`** - Personal overrides (optional)
-
-Override for different environments:
 ```bash
-NODE_ENV=production make start   # Production mode
+# Copy and customize
+cp .env.example .env
+
+# Development (default settings work out of box)
+make dev
+
+# Production (uncomment production section in .env)
+cd docker/prod && ./deploy.sh
 ```
+
+**`.env.example`** contains both development and production settings with clear sections.
 
 ## API Docs
 

@@ -41,7 +41,7 @@ docker-compose -f docker/dev/docker-compose.yml up -d
 ```bash
 # 1. Setup environment (from project root)
 cp .env.example .env
-# Edit .env - uncomment production settings
+# Edit .env - uncomment production section
 
 # 2. Deploy
 cd docker/prod/
