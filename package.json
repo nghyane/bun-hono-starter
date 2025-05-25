@@ -8,7 +8,7 @@
 
   "scripts": {
     "start": "bun run dist/index.js",
-    "prepare": "husky"
+    "prepare": "husky || true"
   },
   "devDependencies": {
     "@biomejs/biome": "^1.9.4",

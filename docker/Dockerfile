@@ -10,8 +10,8 @@ WORKDIR /app
 # Copy package files and Makefile
 COPY package.json bun.lock Makefile ./
 
-# Install production dependencies
-RUN bun install --frozen-lockfile --production
+# Install production dependencies (skip prepare script)
+RUN bun install --frozen-lockfile --production --ignore-scripts
 
 # Copy source code
 COPY . .
