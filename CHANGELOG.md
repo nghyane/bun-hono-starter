@@ -1,6 +1,6 @@
 # Changelog
 
-## [Unreleased]
+## [2.0.1] - 2025-01-25
 
 ### Improved
 - **Enhanced setup command**: Auto-copy `.env.example` to `.env` if not exists
