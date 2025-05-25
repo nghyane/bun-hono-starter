@@ -39,12 +39,12 @@ docker-compose -f docker/dev/docker-compose.yml up -d
 ### Quick Start:
 
 ```bash
-# 1. Setup environment
-cd docker/prod/
+# 1. Setup environment (from project root)
 cp .env.example .env
-# Edit .env with your domain and credentials
+# Edit .env - uncomment production settings
 
 # 2. Deploy
+cd docker/prod/
 ./deploy.sh
 
 # 3. Deploy specific version
@@ -62,24 +62,27 @@ docker pull ghcr.io/nghyane/bun-hono-starter:latest
 
 # 3. Start stack
 cd docker/prod/
-docker-compose --env-file .env up -d
+docker-compose up -d
 ```
 
 ## 🔧 Environment Variables
 
-### Production (.env)
+### Single .env file approach:
+- **Root level**: `.env.example` → `.env`
+- **Development**: Default settings work out of box
+- **Production**: Uncomment production section in `.env`
+
+### Key Variables:
 
 ```bash
-# Domain (required for HTTPS)
-DOMAIN=yourdomain.com
+# Development (default)
+NODE_ENV=development
+DATABASE_URL=postgresql://postgres:postgres@localhost:5432/starter_dev
 
-# Database
-POSTGRES_DB=starter_prod
-POSTGRES_USER=postgres
+# Production (uncomment in .env)
+NODE_ENV=production
 POSTGRES_PASSWORD=your_secure_password
-
-# Optional: Custom image tag
-IMAGE_TAG=v2.0.0
+DOMAIN=yourdomain.com
 ```
 
 ## 🌍 Access Points
