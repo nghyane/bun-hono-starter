@@ -18,6 +18,7 @@
 - Health check tests for CI/CD compatibility
 - Database file execution order
 - Package name consistency
+- Docker build error with Husky in production
 
 ## [1.0.0] - 2025-01-24
 
